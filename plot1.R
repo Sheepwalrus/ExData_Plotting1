@@ -12,6 +12,7 @@ powerDT[, Date := lapply(.SD, as.Date, "%d/%m/%Y"), .SDcols = c("Date")]
 # Cuts the selection of data to values for February 1st. 
 powerDT <- powerDT[(Date >= "2007-02-01") & (Date <= "2007-02-02")]
 
+# Creates empty plot
 png("plot1.png", width=480, height=480)
 
 # First Plot
